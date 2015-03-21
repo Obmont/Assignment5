@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 5</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment5.css"/>
+    <script src="js/Assignment5.js"></script>
+</head>
+
+<body>
+    <div id= wrapper>
+    <h1>
+        Assignment 5
+    </h1>
+    
+    <hr>
+    
+    <select onchange="MenuChoice()" id="menu">
+        <option>Please select an Option</option>
+        <option>Show All Customers</option>
+        <option>Customer Order History</option>
+        <option>Customer Orders</option>
+    </select>
+    
+    <hr>
+    <section id="spacing"></section>
+    <section id="section1">
+        <h2>Show All Customers</h2>
+        <p>Below is a list of all customers</p>
+        
+        <hr>
+        
+        <br>
+        
+        <label id="customerdisplay">This shouldn't appear.</label>
+    </section>
+    
+    <section id="section2">
+        <h2>Search for Customer Order History</h2>
+        <p>Please enter the Customer ID being searched:</p>
+        <input type="text" id="custid1">
+        
+        <br>
+        
+        <button onclick="GetOrderHistory()">Get Customer Order History</button>
+        
+        <hr>
+        
+        <br>
+        
+        <label id="historydisplay">Order History displayed here.</label>
+        
+    </section>
+    
+    <section id="section3">
+        <h2>Search for Customer Orders</h2>
+        <p>Please enter the Customer ID to bring up current orders:</p>
+        <input type="text" id="custid2">
+        
+        <br>
+        
+        <button onclick="GetOrders()">Get Customer Orders</button>
+        
+        <br>
+        
+        <hr>
+        
+        <br>
+        
+        <label id="orderdisplay">Orders will display here.</label>
+    </section>
+    </div>
+</body>
+</html>
